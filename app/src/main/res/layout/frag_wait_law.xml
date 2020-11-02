@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_law">
+
+        <TableRow
+            android:id="@+id/help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="26dp">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/terminate" />
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="16dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/restart" />
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="16dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/percent50" />
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="16dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/help" />
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="16dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/call" />
+        </TableRow>
+
+        <ImageView
+            android:id="@+id/img_Load"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/ic_logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="150dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_progress_indeterminate" />
+
+        <ImageView
+            android:id="@+id/ic_logo"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_alignTop="@id/help"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:alpha="0.2"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_logo" />
+    </RelativeLayout>
+</layout>

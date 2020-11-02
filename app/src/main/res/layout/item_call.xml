@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+        <data>
+                <variable
+                    name="item"
+                    type="com.nth.demoailatrieuphu.model.ItemCall" />
+        </data>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:id="@+id/item_call"
+    >
+        <de.hdodenhof.circleimageview.CircleImageView
+            loadImage="@{item.image}"
+            android:layout_width="69dp"
+            android:layout_height="69dp"
+            android:src="@drawable/leymar"
+            android:id="@+id/img_call"
+            />
+        <TextView
+            updateText="@{item.name}"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Leymar"
+            android:layout_gravity="center"
+            android:textSize="16sp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:id="@+id/txt_name_call"
+            />
+</LinearLayout>
+</layout>
